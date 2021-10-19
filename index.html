@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <style>
+         /*Css reset */
+         body {
+             font-family: 'Baloo Bhai 2', cursive;
+             color: white;
+             margin: 0px;
+             padding: 0px;
+             background-image: url("https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_960_720.jpg");
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+         }
+
+         .left {
+             position: absolute;
+             left: 50px;
+             top: 20px;
+             display: inline-block;
+             /* border: 2px solid red; */
+         }
+
+         .mid {
+             display: block;
+             width: 50%;
+             margin: 20px auto;
+             /* border: 2px solid green; */
+         }
+
+         .right {
+             position: absolute;
+             right: 34px;
+             top: 38px;
+             display: inline-block;
+             /* border: 2px solid yellow; */
+         }
+
+         .navbar {
+             display: inline-block;
+         }
+
+         .navbar li {
+             display: inline-block;
+             font-size: 22px;
+
+         }
+
+         .navbar li a {
+             color: red;
+             text-decoration: none;
+             padding: 34px 23px;
+
+         }
+
+         .navbar li a:hover,
+         .navbar li a.active {
+             text-decoration: underline;
+             color: grey;
+
+         }
+
+         .left img {
+             width: 69px;
+             filter: invert(100%);
+             /* For changing the color of img to white to black aur vice versa */
+         }
+
+         .left {
+             text-align: center;
+         }
+
+         .btn {
+             font-family: 'Baloo Bhai 2', cursive;
+             margin: 0px 9px;
+             background-color: black;
+             color: white;
+             padding: 4px 14px;
+             border-radius: 10px;
+             font-size: 20 px;
+             cursor: pointer;
+
+         }
+
+         .btn:hover {
+             background-color: rgb(54, 52, 52);
+         }
+
+         .container {
+             border: 2px solid white;
+             margin: 118px 744px;
+             padding: 39px 19px;
+             width: 30%;
+             border-radius: 23px;
+         }
+
+         .formgroup input {
+             text-align: center;
+             display: block;
+             width: 300px;
+             padding: 1px;
+             border: 2px solid black;
+             margin: 11px auto;
+             font-size: 25px;
+             border-radius: 8px;
+             font-family: 'Baloo Bhai 2', cursive;
+
+         }
+
+         .container h1 {
+             text-align: center;
+         }
+
+         .container button {
+             display: block;
+             width: 23%;
+             margin: auto;
+
+         }
+     </style>
+ </head>
+
+ <body>
+     <header class="header">
+         <!-- left box for loggo -->
+         <div class="left">
+             <img src="https://cdn.pixabay.com/photo/2018/05/17/19/26/crossfit-3409475__340.png" alt="">
+             <div>Rishabh Fitness</div>
+         </div>
+         <!-- mid box for navbar -->
+         <div class="mid">
+             <ul class="navbar">
+                 <li><a href="#" class="active ">Home</a></li>
+                 <li><a href="#">About us</a></li>
+                 <li><a href="#">Fitness Calculator</a></li>
+                 <li><a href="#">Contact Us</a></li>
+             </ul>
+         </div>
+         <!-- right box for buttons -->
+         <div class="right">
+             <button class="btn">Call Us Now</button>
+             <button class="btn">Email Us</button>
+         </div>
+     </header>
+     <div class="container">
+         <h1>Join of best gym of Haldwani</h1>
+         <form action="noaction.php">
+
+             <div class="formgroup">
+                 <input type="text" name="" placeholder="Enter your Name">
+             </div>
+
+             <div class="formgroup">
+                 <input type="text" name="" placeholder="Enter your Age">
+             </div>
+
+             <div class="formgroup">
+                 <input type="text" name="" placeholder="Enter your Gender">
+             </div>
+
+             <div class="formgroup">
+                 <input type="text" name="" placeholder="Enter your Locality">
+             </div>
+             <button class="btn">Submit</button>
+
+         </form>
+     </div>
+ </body>
+
+ </html>
